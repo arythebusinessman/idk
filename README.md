@@ -26,11 +26,11 @@ what problem it removes.)*
  
 ## Features
  
-- **Course builder** — create modules, lessons, and quizzes from a drag-and-drop editor
-- **Progress tracking** — learners resume exactly where they left off
-- **Quizzes and grading** — auto-graded multiple choice with instant feedback
-- **Responsive** — works on phones and tablets without a separate app
-- **Role-based access** — separate instructor, learner, and admin views
+- SwiftLearn
+    An educational website that lets you learn and take quizzes without paid subscription.
+
+
+
 ## Tech stack
  
 | Layer | Technology |
