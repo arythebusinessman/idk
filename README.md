@@ -1,124 +1,115 @@
-<h1 align="center">Swift Learn</h1>
+<p align="center">
+  <img src="assets/logo.png" alt="SwiftLearn logo" width="140">
+</p>
+<h1 align="center">SwiftLearn</h1>
  
 <p align="center">
-  <em>SwiftLearn
-    An educational website that lets you learn and take quizzes without paid subscription.
-</em>
+  <em>Learn and take quizzes effectively — completely free, no paid subscription.</em>
 </p>
 <p align="center">
-  <a href="https://github.com/USER/swift-learn/actions"><img src="https://img.shields.io/github/actions/workflow/status/USER/swift-learn/ci.yml" alt="Build"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/USER/swift-learn" alt="License"></a>
-  <a href="https://swift-learn.example.com"><img src="https://img.shields.io/badge/demo-live-brightgreen" alt="Live demo"></a>
-</p>
-<p align="center">
-  <img src="docs/demo.gif" alt="Swift Learn walkthrough" width="700">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/USER/swiftlearn" alt="License"></a>
+  <a href="https://swiftlearn.example.com"><img src="https://img.shields.io/badge/demo-live-brightgreen" alt="Live demo"></a>
 </p>
 ---
  
 ## What it does
  
-Swift Learn lets instructors publish structured courses and lets learners work
-through them at their own pace — lessons, quizzes, and progress tracking in one
-place, with no setup beyond a browser.
+SwiftLearn is an educational website that helps students learn subjects and
+test themselves through quizzes, without any paywall. It's built around three
+core tools that work together to help you study smarter, not longer.
  
-*(Replace this paragraph with your actual one-liner. Be concrete: who uses it,
-what problem it removes.)*
- 
-**[Live demo →](https://swift-learn.example.com)** · **[Documentation →](https://docs.swift-learn.example.com)**
+**[Live demo →](https://swiftlearn.example.com)**
  
 ## Features
  
-- SWIFT
-- SCOPE
-- CLYNX
-
-
-
+| Feature | What it does |
+|---------|--------------|
+| **SWIFT** | The core learning tool — helps students approach and work through subjects effectively |
+| **SCOPE** | An AI model that helps you memorize subject material |
+| **CLYNX** | A formula that ranks and estimates how much study time you need per subject |
+ 
+## Advantages
+ 
+- Learn and memorize quickly using **SWIFT** and **SCOPE**
+- Manage your study sessions with **CLYNX**
+- Track progress and aim for your highest possible score
+- No subscription, no paywall — free to use
 ## Tech stack
  
 | Layer | Technology |
 |-------|-----------|
-| Frontend | React 18 + TypeScript, Vite |
-| Styling | Tailwind CSS |
-| Backend | Node.js + Express |
-| Database | PostgreSQL + Prisma |
-| Auth | JWT / OAuth |
+| Frontend | JavaScript, React (JSX) |
+| Styling | CSS, Figma (design) |
+| Backend | Firebase |
  
 ## Getting started
  
-**Requirements:** Node 18+, npm 9+, PostgreSQL 14+
+**Requirements:** Node.js 18+, npm, a Firebase project
  
 ```bash
-git clone https://github.com/USER/swift-learn.git
-cd swift-learn
+git clone https://github.com/USER/swiftlearn.git
+cd swiftlearn
 npm install
+```
+ 
+Set up your Firebase config:
+ 
+```bash
 cp .env.example .env
-npm run db:migrate
+```
+ 
+Then fill in `.env` with your Firebase project's credentials:
+ 
+```
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
+ 
+Run it locally:
+ 
+```bash
 npm run dev
 ```
  
-Open http://localhost:5173 — a seeded demo course and test accounts are created
-automatically.
- 
-| Role | Email | Password |
-|------|-------|----------|
-| Instructor | `teacher@demo.local` | `demo1234` |
-| Learner | `student@demo.local` | `demo1234` |
- 
-## Configuration
- 
-Copy `.env.example` to `.env` and set:
- 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `DATABASE_URL` | yes | PostgreSQL connection string |
-| `JWT_SECRET` | yes | Secret used to sign session tokens |
-| `PORT` | no | API port (default `3000`) |
-| `UPLOAD_DIR` | no | Where lesson media is stored (default `./uploads`) |
- 
-## Scripts
- 
-```bash
-npm run dev        # start frontend + API in watch mode
-npm run build      # production build
-npm run test       # run the test suite
-npm run lint       # eslint + type check
-npm run db:seed    # reset and reseed demo data
-```
+Open http://localhost:5173 in your browser.
  
 ## Project structure
  
 ```
-swift-learn/
-├── client/        # React frontend
-│   ├── src/components/
-│   ├── src/pages/
-│   └── src/hooks/
-├── server/        # Express API
-│   ├── src/routes/
-│   ├── src/services/
-│   └── prisma/
-└── docs/
+swiftlearn/
+├── src/
+│   ├── components/     # React components
+│   ├── pages/          # Page views
+│   ├── features/
+│   │   ├── swift/
+│   │   ├── scope/
+│   │   └── clynx/
+│   └── firebase/       # Firebase config and helpers
+├── public/
+└── assets/
 ```
+ 
+*(Adjust this to match your actual folder layout.)*
  
 ## Roadmap
  
-- [x] Course builder and lesson player
-- [x] Quizzes with auto-grading
-- [ ] Certificates on completion
-- [ ] Offline mode
-- [ ] Instructor analytics dashboard
-See [open issues](https://github.com/USER/swift-learn/issues) for the full list.
- 
+- [x] SWIFT learning tool
+- [x] SCOPE memorization AI
+- [x] CLYNX study-time ranking
+- [ ] Mobile app
+- [ ] Leaderboards
+- [ ] Offline quiz mode
 ## Contributing
  
-Pull requests are welcome. For larger changes, open an issue first so we can
-discuss the approach.
+Contributions are welcome.
  
 1. Fork the repo and create a branch: `git checkout -b feat/my-feature`
-2. Make your changes and add tests
-3. Run `npm run lint && npm run test`
-4. Open a pull request describing what changed and why
+2. Make your changes
+3. Open a pull request describing what changed and why
 ## License
  
 [MIT](LICENSE) © Your Name
