@@ -24,9 +24,9 @@ core tools that work together to help you study smarter, not longer.
  
 | Feature | What it does |
 |---------|--------------|
-| **SWIFT** | The core learning tool — helps students approach and work through subjects effectively |
+| **SWIFT** | The core learning tool — helps students approach and work through subjects effectively with step by step guidence and weakness tracking|
 | **SCOPE** | An AI model that helps you memorize subject material |
-| **CLYNX** | A formula that ranks and estimates how much study time you need per subject |
+| **CLYNX** | A formula that ranks and estimates how much study time you need per problems |
  
 ## Advantages
  
@@ -34,7 +34,7 @@ core tools that work together to help you study smarter, not longer.
 - Manage your study sessions with **CLYNX**
 - Track progress and aim for your highest possible score
 - No subscription, no paywall — free to use
-## Tech stack
+## Tech stackss
  
 | Layer | Technology |
 |-------|-----------|
