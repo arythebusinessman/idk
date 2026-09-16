@@ -1,7 +1,9 @@
 <h1 align="center">Swift Learn</h1>
  
 <p align="center">
-  <em>A fast, focused web platform for building and taking courses.</em>
+  <em>SwiftLearn
+    An educational website that lets you learn and take quizzes without paid subscription.
+</em>
 </p>
 <p align="center">
   <a href="https://github.com/USER/swift-learn/actions"><img src="https://img.shields.io/github/actions/workflow/status/USER/swift-learn/ci.yml" alt="Build"></a>
@@ -26,8 +28,9 @@ what problem it removes.)*
  
 ## Features
  
-- SwiftLearn
-    An educational website that lets you learn and take quizzes without paid subscription.
+- SWIFT
+- SCOPE
+- CLYNX
 
 
 
